@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(
                         MainActivity.this, Counting.class
                 );
+                intent.putExtra("score", 0);
+                intent.putExtra("questionNumber", 0);
 
                 startActivity(intent);
             }
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(
                         MainActivity.this, HigherNumber.class
                 );
+                intent.putExtra("score", 0);
+                intent.putExtra("questionNumber", 0);
 
                 startActivity(intent);
             }
