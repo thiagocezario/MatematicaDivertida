@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     private Button countingButton;
     private Button basicEquationsButton;
@@ -29,6 +31,19 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("score", 0);
                 intent.putExtra("questionNumber", 0);
 
+                ArrayList<Integer> images = new ArrayList<>();
+                images.add(R.drawable.image1);
+                images.add(R.drawable.image2);
+                images.add(R.drawable.image3);
+                images.add(R.drawable.image4);
+                images.add(R.drawable.image5);
+                images.add(R.drawable.image6);
+                images.add(R.drawable.image7);
+                images.add(R.drawable.image8);
+                images.add(R.drawable.image9);
+                images.add(R.drawable.image10);
+
+                intent.putIntegerArrayListExtra("images", images);
                 startActivity(intent);
             }
         });

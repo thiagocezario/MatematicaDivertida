@@ -75,12 +75,13 @@ public class Equations extends AppCompatActivity {
                             intent.putExtra("score", score);
                             intent.putExtra("questionNumber", questionsAsked + 1);
                             startActivity(intent);
-
+                            finish();
                         } else {
                             Intent intent = new Intent(Equations.this, Result.class);
                             intent.putExtra("score", score);
                             intent.putExtra("questionNumber", questionsAsked + 1);
                             startActivity(intent);
+                            finish();
                         }
                     }
                 });
