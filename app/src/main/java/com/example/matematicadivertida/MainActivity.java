@@ -37,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(
                         MainActivity.this, Equations.class
                 );
-
+                intent.putExtra("score", 0);
+                intent.putExtra("questionNumber", 0);
                 startActivity(intent);
             }
         });

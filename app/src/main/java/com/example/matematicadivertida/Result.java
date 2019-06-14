@@ -17,8 +17,9 @@ public class Result extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         Intent intent = getIntent();
-        String totalScore = intent.getStringExtra("score");
-        
+        int totalScore = intent.getIntExtra("score", 0);
+        totalScore = totalScore*20;
+
         score = findViewById(R.id.score);
         goBack = findViewById(R.id.goBack);
 
@@ -31,6 +32,6 @@ public class Result extends AppCompatActivity {
             }
         });
 
-        score.setText(totalScore);
+        score.setText(String.format("%d", totalScore));
     }
 }
