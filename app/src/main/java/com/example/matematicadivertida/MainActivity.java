@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
                 intent.putIntegerArrayListExtra("images", images);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("score", 0);
                 intent.putExtra("questionNumber", 0);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -70,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("questionNumber", 0);
 
                 startActivity(intent);
+                finish();
             }
         });
     }
